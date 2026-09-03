@@ -1,4 +1,4 @@
-<!-- index.html | Página inicial do Site Jornada DSM -->
+<!-- Arquivo: docs/index.html -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -7,40 +7,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jornada DSM</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>🌍 Jornada DSM</h1>
-        <p>Ambiente web para navegar entre disciplinas, conteúdos e projetos acadêmicos.</p>
+        <div class="container topo">
+            <a class="marca" href="index.html">
+                <div class="marca-icone">&lt;/&gt;</div>
+
+                <div>
+                    <h1>Jornada DSM</h1>
+                    <p>Estudos e Organização</p>
+                </div>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a class="ativo" href="index.html" aria-current="page">⌂ Início</a></li>
+                    <li><a href="disciplinas.html">▣ Disciplinas</a></li>
+                    <li><a href="semestres.html">▦ Semestres</a></li>
+                    <li><a href="sobre.html">ⓘ Sobre</a></li>
+                    <li>
+                        <a href="https://github.com/ojjrx-code/jornada-dsm">
+                            ● Repositório
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <hr>
-
     <main>
-        <h2>📚 Conteúdos</h2>
 
-        <p>
-            Este site está em desenvolvimento e será utilizado para organizar
-            os conteúdos estudados no curso de Desenvolvimento de Software Multiplataforma.
-        </p>
+        <section class="hero">
+            <div class="container hero-conteudo">
 
-        <h2>🚧 Em desenvolvimento</h2>
+                <div class="hero-texto">
+                    <p class="introducao">Bem-vindo à</p>
 
-        <ul>
-            <li>Semestres</li>
-            <li>Disciplinas</li>
-            <li>Conteúdos de estudo</li>
-            <li>Projetos acadêmicos</li>
-            <li>Mapa de conhecimento</li>
-        </ul>
+                    <h2>
+                        Jornada <span class="destaque">DSM</span>
+                    </h2>
+
+                    <p class="hero-descricao">
+                        Organização dos meus estudos, anotações,
+                        pesquisas e atividades.
+                    </p>
+
+                    <hr class="linha">
+
+                    <p class="hero-frase">
+                        Construindo conhecimento, um passo de cada vez.
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="codigo-visual">
+                        <div class="codigo-topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="codigo-simbolo">
+                            &lt;/&gt;
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="atalhos">
+            <div class="container grade-atalhos">
+
+                <article class="card" id="disciplinas">
+                    <div class="card-icone">📖</div>
+
+                    <h3>Disciplinas</h3>
+
+                    <p>
+                        Acesse o conteúdo organizado de cada disciplina.
+                    </p>
+
+                    <a class="botao" href="disciplinas.html">
+                        Ver Disciplinas →
+                    </a>
+                </article>
+
+                <article class="card" id="semestres">
+                    <div class="card-icone">▦</div>
+
+                    <h3>Semestres</h3>
+
+                    <p>
+                        Navegue pelos semestres e acompanhe o curso.
+                    </p>
+
+                    <a class="botao" href="semestres.html">
+                        Ver Semestres →
+                    </a>
+                </article>
+
+                <article class="card" id="sobre">
+                    <div class="card-icone">ⓘ</div>
+
+                    <h3>Sobre</h3>
+
+                    <p>
+                        Conheça o objetivo e o propósito deste projeto.
+                    </p>
+
+                    <a class="botao" href="sobre.html">
+                        Saiba mais →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone">●</div>
+
+                    <h3>Repositório</h3>
+
+                    <p>
+                        Acesse o código-fonte e os materiais no GitHub.
+                    </p>
+
+                    <a
+                        class="botao"
+                        href="https://github.com/ojjrx-code/jornada-dsm"
+                    >
+                        Ver no GitHub →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="citacao">
+            <div class="container">
+                <blockquote>
+                    <strong>“</strong>
+                    A tecnologia existe para servir à vida,
+                    não para nos tornar escravos dela.
+                    <strong>”</strong>
+                </blockquote>
+            </div>
+        </section>
+
     </main>
 
-    <hr>
-
     <footer>
-        <p>Jornada DSM 2026</p>
+        <div class="container rodape">
+            <p>
+                <span class="rodape-marca">Jornada DSM</span>
+                &nbsp; | &nbsp;
+                Desenvolvido por ojjrx-code
+                &nbsp; | &nbsp;
+                2026
+            </p>
+
+            <p>Estudar • Aprender • Construir o futuro</p>
+        </div>
     </footer>
 
 </body>
