@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5F7FF;
+    background:
+        radial-gradient(circle at 75% 20%, #063D8C 0%, transparent 28%),
+        linear-gradient(180deg, #031A3E 0%, #04152F 100%);
+}
+
+body.pagina-interna {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-interna main {
+    flex: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(100% - 32px, 1380px);
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #234A7D;
+    background: #031A3E;
+}
+
+.topo {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca-icone {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border: 3px solid #FF7A00;
+    border-radius: 14px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.marca h1 {
+    font-size: 1.45rem;
+}
+
+.marca p {
+    margin-top: 3px;
+    color: #B7C5DE;
+    font-size: 0.82rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    padding: 27px 0 20px;
+    color: #DCE6F6;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: #FFFFFF;
+    border-bottom-color: #FF7A00;
+}
+
+.hero {
+    padding: 54px 0;
+    border-bottom: 1px solid #173B6C;
+}
+
+.hero-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-texto .introducao {
+    margin-bottom: 4px;
+    color: #AFC3E4;
+    font-size: 1.8rem;
+}
+
+.hero-texto h2 {
+    max-width: 600px;
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1;
+}
+
+.destaque {
+    color: #FF8500;
+}
+
+.hero-descricao {
+    max-width: 580px;
+    margin-top: 22px;
+    color: #D3DEF0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.linha {
+    width: 145px;
+    height: 4px;
+    margin: 24px 0;
+    border: 0;
+    background: linear-gradient(90deg, #FF8500, transparent);
+}
+
+.hero-frase {
+    color: #AFC3E4;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.hero-visual {
+    min-height: 330px;
+    display: grid;
+    place-items: center;
+}
+
+.codigo-visual {
+    width: min(100%, 520px);
+    padding: 30px;
+    border: 1px solid #1265B8;
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at 70% 30%, #0B58A8 0%, transparent 42%),
+        #041A39;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.codigo-topo {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.codigo-topo span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FF8500;
+}
+
+.codigo-simbolo {
+    display: grid;
+    place-items: center;
+    min-height: 200px;
+    color: #37B7FF;
+    font-family: Consolas, monospace;
+    font-size: clamp(4rem, 9vw, 7rem);
+    text-shadow: 0 0 20px rgba(55, 183, 255, 0.5);
+}
+
+.atalhos {
+    padding: 24px 0 26px;
+}
+
+.grade-atalhos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grade-atalhos .card {
+    min-height: 270px;
+}
+
+.card {
+    padding: 28px;
+    border: 1px solid #155AB0;
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(8, 49, 104, 0.9), rgba(4, 25, 59, 0.95));
+}
+
+.card:nth-child(2) {
+    border-color: #A75414;
+}
+
+.card:nth-child(3) {
+    border-color: #6B3CC8;
+}
+
+.card:nth-child(4) {
+    border-color: #008C8B;
+}
+
+.card-icone {
+    width: 68px;
+    height: 68px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #075DBA;
+    font-size: 2rem;
+}
+
+.card:nth-child(2) .card-icone {
+    background: #D86800;
+}
+
+.card:nth-child(3) .card-icone {
+    background: #6634C8;
+}
+
+.card:nth-child(4) .card-icone {
+    background: #008B88;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #C2CEE2;
+    line-height: 1.5;
+}
+
+.grade-atalhos .card p {
+    min-height: 72px;
+}
+
+.botao {
+    display: block;
+    margin-top: 18px;
+    padding: 13px 18px;
+    border: 2px solid #1381F6;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card:nth-child(2) .botao {
+    border-color: #FF7A00;
+}
+
+.card:nth-child(3) .botao {
+    border-color: #8D49F7;
+}
+
+.card:nth-child(4) .botao {
+    border-color: #00B69E;
+}
+
+.botao:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.citacao {
+    padding: 0 0 34px;
+}
+
+blockquote {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 26px 30px;
+    border: 1px solid #1C4E8D;
+    border-radius: 18px;
+    color: #B8C6DF;
+    background: rgba(7, 40, 87, 0.65);
+    text-align: center;
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+blockquote strong {
+    color: #FF8500;
+}
+
+.hero-pagina .hero-descricao {
+    max-width: 760px;
+}
+
+.hero-pagina .linha {
+    margin-bottom: 0;
+}
+
+.conteudo-pagina {
+    padding: 32px 0 48px;
+}
+
+.conteudo-pagina + .conteudo-pagina {
+    padding-top: 0;
+}
+
+.secao-cabecalho {
+    max-width: 760px;
+    margin-bottom: 24px;
+}
+
+.secao-cabecalho h2 {
+    margin-bottom: 10px;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.secao-cabecalho > p:last-child {
+    color: #C2CEE2;
+    line-height: 1.6;
+}
+
+.secao-etiqueta {
+    margin-bottom: 6px;
+    color: #FF8500;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.grade-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 20px;
+}
+
+.grade-conteudo-reduzida {
+    max-width: 680px;
+}
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icone-codigo {
+    font-family: Consolas, monospace;
+    font-size: 1.45rem;
+    font-weight: bold;
+}
+
+.lista-conteudos {
+    margin-top: auto;
+    list-style: none;
+}
+
+.card-semestre .botao + .botao {
+    margin-top: 10px;
+}
+
+.nota-expansao {
+    max-width: 680px;
+    margin-top: 18px;
+    color: #AFC3E4;
+    line-height: 1.6;
+}
+
+.sobre-conteudo {
+    max-width: 900px;
+}
+
+.sobre-conteudo .botao {
+    min-width: 220px;
+    align-self: flex-start;
+}
+
+footer {
+    border-top: 1px solid #234A7D;
+    background: #03152F;
+}
+
+.rodape {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #B6C4DC;
+    font-size: 0.9rem;
+}
+
+.rodape-marca {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .topo {
+        padding: 16px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    nav ul {
+        width: max-content;
+        gap: 22px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero {
+        padding: 38px 0;
+    }
+
+    .hero-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texto .introducao {
+        font-size: 1.35rem;
+    }
+
+    .hero-visual {
+        min-height: auto;
+    }
+
+    .grade-atalhos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 24px, 1380px);
+    }
+
+    .marca-icone {
+        width: 46px;
+        height: 46px;
+    }
+
+    .marca h1 {
+        font-size: 1.15rem;
+    }
+
+    .hero-texto h2 {
+        font-size: 3rem;
+    }
+
+    .hero-descricao {
+        font-size: 1rem;
+    }
+
+    .codigo-visual {
+        padding: 20px;
+    }
+
+    .grade-atalhos {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-atalhos .card,
+    .grade-atalhos .card p {
+        min-height: auto;
+    }
+
+    .conteudo-pagina {
+        padding: 24px 0 38px;
+    }
+
+    .sobre-conteudo .botao {
+        min-width: 0;
+        align-self: stretch;
+    }
+
+    .rodape {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
